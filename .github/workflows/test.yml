@@ -11,7 +11,7 @@ jobs:
         uses: powerops-mk/replace-action@main
         with:
           filter: "hello"
-          path: ${{ secrets.RENDER_URL }}
+          path: ${{ secrets.TEST_SECRET }}
 
       - name: Get the output
         run: echo "The ${{ steps.test.outputs.time }}"
