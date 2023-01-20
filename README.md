@@ -17,6 +17,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: Find and Replace
         uses: powerops-mk/replace-action@main
+        with:
+          path: ./app
+          filter: *.yml
 ```
 
 ### Inputs
