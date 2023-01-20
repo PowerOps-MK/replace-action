@@ -8,5 +8,6 @@ output_file = os.environ["GITHUB_OUTPUT"]
 with open(output_file, "a") as file:
     file.write(f"time={files_filter}")
 
-y = glob.glob(files_filter)
+z = files-path + "/" + files_filter
+y = glob.glob(z)
 print(y)
