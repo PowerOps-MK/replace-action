@@ -7,7 +7,5 @@ WORKDIR /app
 # Copy directory files i.e all files
 COPY . .
 
-RUN chmod +x entrypoint.sh
-
 # Code file to execute when the docker container starts up
-ENTRYPOINT ["/app/entrypoint.sh"]
+ENTRYPOINT ["/app/replace.py"]
