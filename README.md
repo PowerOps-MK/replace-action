@@ -1,6 +1,4 @@
-# replace-action
-
-# Replace - docker action
+# Replace - Docker Action
 
 GitHub Action to replace string in files
 
