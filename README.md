@@ -1,8 +1,8 @@
 # replace-action
 
-# Hello world docker action
+# Replace - docker action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+GitHub Action to replace string in files
 
 ## Inputs
 
@@ -21,5 +21,3 @@ The time we greeted you.
 uses: actions/hello-world-docker-action@v2
 with:
   who-to-greet: 'Mona the Octocat'
-
-GitHub Action to replace string in files
