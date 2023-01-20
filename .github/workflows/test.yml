@@ -10,7 +10,7 @@ jobs:
         id: test
         uses: powerops-mk/replace-action@main
         with:
-          filter: "hello"
+          filter: "*.txt"
           path: ${{ secrets.TEST_SECRET }}
 
       - name: Get the output
