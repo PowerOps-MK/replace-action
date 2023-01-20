@@ -8,4 +8,4 @@ with open(output_file, "a") as file:
     file.write(f"time={files_filter}")
 
 lst = os.listdir("./")
-print(os.getcwd())
+print(lst)
