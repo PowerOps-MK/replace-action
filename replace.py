@@ -5,4 +5,4 @@ files_filter = os.environ["INPUT_FILTER"]
 
 print(files_path)
 
-print(f"::set-output name=time::{files_filter}")
+echo "time=files_filter" >> $GITHUB_OUTPUT
