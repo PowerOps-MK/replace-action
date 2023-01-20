@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: powerops-mk/replace-action@v2
+        uses: powerops-mk/replace-action
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
