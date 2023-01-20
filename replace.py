@@ -1,3 +1,1 @@
-import os
-
-Print("hello")
+print("hello")
