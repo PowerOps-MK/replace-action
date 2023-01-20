@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Find and Replace
+      - name: Replace
         id: test
         uses: powerops-mk/replace-action@main
         with:
