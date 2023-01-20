@@ -1,6 +1,10 @@
 name: "Replace Action"
 description: "GitHub Action to replace string in files"
-# inputs:
+inputs:
+  path:
+    description: "Path of the files"
+  filter:
+    description: "Filter for the files"
 outputs:
   modifiedFiles:
     description: "The number of files which have been modified"
