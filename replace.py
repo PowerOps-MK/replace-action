@@ -1,3 +1,4 @@
+import glob
 import os
 
 files_path = os.environ["INPUT_PATH"]
@@ -7,5 +8,5 @@ output_file = os.environ["GITHUB_OUTPUT"]
 with open(output_file, "a") as file:
     file.write(f"time={files_filter}")
 
-lst = os.listdir("./")
-print(lst)
+y = glob.glob(files_filter)
+print(y)
