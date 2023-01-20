@@ -1,5 +1,5 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Replace Action'
+description: 'GitHub Action to replace string in files'
 inputs:
 outputs:
   modifiedFiles:
