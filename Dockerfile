@@ -5,7 +5,7 @@ FROM alpine:3.17.1
 WORKDIR /app
 
 # Copy directory files i.e all files
-# COPY . .
+COPY . .
 
 # Download modules and dependencies
 # RUN pip install --no-cache-dir -r requirements.txt
