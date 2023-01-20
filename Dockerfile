@@ -1,5 +1,5 @@
-#Specify the base image alpine:3.17.1
-FROM alpine@sha256:f271e74b17ced29b915d351685fd4644785c6d1559dd1f2d4189a5e851ef753a
+# Specify the base image python:3.11-slim
+FROM python@sha256:1274a1fb3354baf78e80cc7485771175b506a4712e49e272765dceeb0528fad1
 
 # Create a working directory inside the image
 WORKDIR /app
@@ -8,4 +8,4 @@ WORKDIR /app
 COPY . .
 
 # Code file to execute when the docker container starts up
-CMD ["/app/replace.py"]
+CMD ["python3", "./replace.py"]
