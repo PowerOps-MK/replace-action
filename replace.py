@@ -9,5 +9,6 @@ z = files_path + "/" + files_filter
 y = glob.glob(z)
 print(y)
 
+modified_count = len(y)
 with open(output_file, "a") as file:
-    file.write(f"time={len(y)}")
+    file.write(f"time={modified_count}")
