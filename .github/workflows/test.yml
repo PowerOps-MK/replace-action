@@ -10,7 +10,7 @@ jobs:
         id: test
         uses: powerops-mk/replace-action@main
         with:
-          filter: "*.*"
+          filter: "*.txt"
           path: ./Test
           find: "XX_IP"
           replace: "ZYX"
