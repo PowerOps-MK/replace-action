@@ -1,5 +1,5 @@
 ---
-name: My Workflow
+name: Test Action workflow
 on: [push, pull_request]
 jobs:
   build:
@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Replace
-        id: test
+        id: replace
         uses: powerops-mk/replace-action@main
         with:
           path: "Test"
@@ -16,5 +16,5 @@ jobs:
 
       - name: Get the output
         run: |
-          cat ./Test/file4.json
-          echo "The ${{ steps.test.outputs.count }}"
+          cat ./Test/file3.json
+          echo "File count is ${{ steps.replace.outputs.count }}"
