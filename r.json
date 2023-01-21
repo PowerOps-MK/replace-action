@@ -3,12 +3,12 @@
   "files":
   [
     {
-      "file": "file1.txt",
-      "replace": "XYZ"
+      "file": "file2..json",
+      "replace": "192.168.1.1"
     },
     {
-      "file": "file3.txt",
-      "replace": "ZYX"
+      "file": "file2.yaml",
+      "replace": "192.168.1.2"
     }
   ]
 }
