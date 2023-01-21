@@ -27,7 +27,7 @@ jobs:
 | Input                  | Description                                                                                                                            |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | `path` | The path of the files to replace |
-| `json` | Filter the files in the path |
+| `json` | JSON file to match file with replace String |
 | `find` | The String to search in files |
 
 ### Outputs
