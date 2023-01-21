@@ -1,4 +1,3 @@
-import glob
 import json
 import os
 
@@ -7,13 +6,17 @@ files_json = os.environ["INPUT_JSON"]
 find = os.environ["INPUT_FIND"]
 output_file = os.environ["GITHUB_OUTPUT"]
 
-z = f"{files_path}/*.*"
-y = glob.glob(z)
+files_dict = json.loads(files_json)
+for object in files_dict["replace"]:
+    print(object["file"])
 
-modified_count = len(y)
+modified_count = len(files_dict["replace"])
 with open(output_file, "a") as file:
-    o = f"count={modified_count}"
-    file.write(o)
+    output = f"count={modified_count}"
+    file.write(output)
+
+"""
+z = f"{files_path}/*.*"
 
 for k in y:
     # Read in the file
@@ -26,7 +29,4 @@ for k in y:
     # Write the file out again
     with open(k, "w") as file:
         file.write(filedata)
-
-aList = json.loads(files_json)
-for k in aList["replace"]:
-    print(k["ip"])
+"""
