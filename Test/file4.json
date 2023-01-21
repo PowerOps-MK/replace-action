@@ -1,4 +1,5 @@
 {
   "name": "John Doe",
-  "age": 40
+  "age": 40,
+  "street": "XX_IP"
 }
