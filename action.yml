@@ -5,6 +5,10 @@ inputs:
     description: "Path of the files"
   filter:
     description: "Filter for the files"
+  find:
+    description: "String to search in files"
+  replace:
+    description: "String to replace in files"
 outputs:
   modified_count:
     description: "The number of files which have been modified"
