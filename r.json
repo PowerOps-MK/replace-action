@@ -1,14 +1,14 @@
 {
   "name": "replace.json",
-  "replace":
+  "files":
   [
     {
       "file": "file1.txt",
-      "ip": "XYZ"
+      "replace": "XYZ"
     },
     {
       "file": "file3.txt",
-      "ip": "ZYX"
+      "replace": "ZYX"
     }
   ]
 }
