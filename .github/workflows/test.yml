@@ -16,5 +16,5 @@ jobs:
 
       - name: Get the output
         run: |
-          cat ./Test/file3.json
+          cat ./Test/file4.json
           echo "The ${{ steps.test.outputs.count }}"
