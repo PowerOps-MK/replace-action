@@ -20,7 +20,7 @@ for k in y:
         filedata = file.read()
 
     # Replace the target string
-    filedata = filedata.replace(find, replace)
+    filedata = filedata.replace(find, "XYZ")
 
     # Write the file out again
     with open(k, "w") as file:
