@@ -16,7 +16,7 @@ with open(output_file, "a") as file:
 for k in y:
     # Read in the file
     with open(k, "r") as file:
-      filedata = file.read()
+       filedata = file.read()
 
     # Replace the target string
     filedata = filedata.replace("Hello", "xyz")
@@ -25,4 +25,3 @@ for k in y:
     with open(k, "w") as file:
         g = file.write(filedata)
         print(g)
-
