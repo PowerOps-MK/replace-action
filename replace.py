@@ -9,19 +9,18 @@ output_file = os.environ["GITHUB_OUTPUT"]
 files_dict = json.loads(files_json)
 for object in files_dict["replace"]:
     full_path = f"{files_path}/{object['file']}"
-    print(full_path)
+    
+    # Read in the file
+    with open(full_path, "r") as file:
+        filedata = file.read()
+        print(filedata)
 
 modified_count = len(files_dict["replace"])
 with open(output_file, "a") as file:
     output = f"count={modified_count}"
     file.write(output)
 
-"""
-for k in y:
-    # Read in the file
-    with open(k, "r") as file:
-        filedata = file.read()
-
+""" 
     # Replace the target string
     filedata = filedata.replace(find, "XYZ")
 
