@@ -20,6 +20,7 @@ jobs:
         with:
           path: ./app
           filter: *.yml
+          find: XYZ_NAME
 ```
 
 ### Inputs
