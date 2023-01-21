@@ -1,4 +1,5 @@
 import glob
+import json
 import os
 
 files_path = os.environ["INPUT_PATH"]
@@ -25,3 +26,6 @@ for k in y:
     # Write the file out again
     with open(k, "w") as file:
         file.write(filedata)
+
+aList = json.loads(files_json)
+print(aList)
