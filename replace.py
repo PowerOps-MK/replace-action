@@ -26,6 +26,3 @@ for k in y:
     # Write the file out again
     with open(k, "w") as file:
         file.write(filedata)
-
-    with open(k, "r") as file:
-        print(file.read())
