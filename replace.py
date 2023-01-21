@@ -12,5 +12,6 @@ for file in y:
         print(fil.read())
 
 modified_count = len(y)
-with open(output_file, "a") as file:
-    file.write(f"count={modified_count}")
+with open(output_file, "a") as fil:
+    o = f"count={modified_count}"
+    fil.write(o)
