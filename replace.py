@@ -21,7 +21,7 @@ for object in files_dict["files"]:
     filedata = filedata.replace(find, object["replace"])
 
     # Write the file out again
-    with open(k, "w") as file:
+    with open(full_path, "w") as file:
         file.write(filedata)
 
 modified_count = len(files_dict["replace"])
