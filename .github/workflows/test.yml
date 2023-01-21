@@ -16,4 +16,6 @@ jobs:
           replace: "ZYX"
 
       - name: Get the output
-        run: echo "The ${{ steps.test.outputs.count }}"
+        run: |
+          cat ./app/file3.txt
+          echo "The ${{ steps.test.outputs.count }}"
