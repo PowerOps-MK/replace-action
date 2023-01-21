@@ -33,4 +33,4 @@ jobs:
 
 | Output          | Description                                 |
 | --------------- | ------------------------------------------- |
-| `modifiedFiles` | The number of files that have been modified |
+| `modified_count` | The number of files that have been modified |
