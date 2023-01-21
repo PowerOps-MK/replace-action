@@ -11,7 +11,7 @@ jobs:
         uses: powerops-mk/replace-action@main
         with:
           path: "./Test"
-          json: "./Test/replace.json"
+          json: "./replace.json"
           find: "XX_IP"
 
       - name: Get the output
