@@ -9,7 +9,7 @@ z = f"{files_path}/{files_filter}"
 y = glob.glob(z)
 for file in y:
     with open(file, "r") as fil:
-       print(fil.read())
+        print(fil.read())
 
 modified_count = len(y)
 with open(output_file, "a") as file:
