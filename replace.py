@@ -2,12 +2,11 @@ import glob
 import os
 
 files_path = os.environ["INPUT_PATH"]
-files_filter = os.environ["INPUT_FILTER"]
+files_json = os.environ["INPUT_JSON"]
 find = os.environ["INPUT_FIND"]
-replace = os.environ["INPUT_REPLACE"]
 output_file = os.environ["GITHUB_OUTPUT"]
 
-z = f"{files_path}/{files_filter}"
+z = f"{files_path}/*.*}"
 y = glob.glob(z)
 
 modified_count = len(y)
