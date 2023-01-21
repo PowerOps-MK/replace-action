@@ -24,7 +24,7 @@ for object in files_dict["files"]:
     with open(full_path, "w") as file:
         file.write(filedata)
 
-modified_count = len(files_dict["replace"])
+modified_count = len(files_dict["files"])
 with open(output_file, "a") as file:
     output = f"count={modified_count}"
     file.write(output)
