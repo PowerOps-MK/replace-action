@@ -5,7 +5,7 @@ GitHub Action to replace string in files
 ## Usage
 
 ### Example workflow
-This example replaces `hello` with `world` in all of your project files.
+This example replaces `hello` with the input for the given JSON file
 
 ```yaml
 name: My Workflow
@@ -14,13 +14,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Find and Replace
         uses: powerops-mk/replace-action@main
         with:
           path: ./files
-          filter: *.yml
-          find: XYZ_NAME
+          json: input.json
+          find: hello
 ```
 
 ### Inputs
