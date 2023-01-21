@@ -1,6 +1,6 @@
 {
   "name": "replace.json",
-  replace:
+  "replace":
   [
     {
       "file": "file1.txt",
