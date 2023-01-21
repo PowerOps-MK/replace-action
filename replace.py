@@ -6,7 +6,10 @@ files_json = os.environ["INPUT_JSON"]
 find = os.environ["INPUT_FIND"]
 output_file = os.environ["GITHUB_OUTPUT"]
 
+# Load JSON into a dictionary
 files_dict = json.loads(files_json)
+
+#  Loop through the dictionary
 for object in files_dict["files"]:
     full_path = f"{files_path}/{object['file']}"
     
