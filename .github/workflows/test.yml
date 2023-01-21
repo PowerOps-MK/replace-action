@@ -10,7 +10,7 @@ jobs:
         id: test
         uses: powerops-mk/replace-action@main
         with:
-          path: "./Test"
+          path: "Test"
           json: "replace.json"
           find: "XX_IP"
 
