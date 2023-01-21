@@ -7,7 +7,7 @@ find = os.environ["INPUT_FIND"]
 output_file = os.environ["GITHUB_OUTPUT"]
 
 files_dict = json.loads(files_json)
-for object in files_dict["replace"]:
+for object in files_dict["files"]:
     full_path = f"{files_path}/{object['file']}"
     
     # Read in the file
@@ -15,7 +15,7 @@ for object in files_dict["replace"]:
         filedata = file.read()
 
     # Replace the target string
-    filedata = filedata.replace(find, object["ip"])
+    filedata = filedata.replace(find, object["replace"])
 
     # Write the file out again
     with open(k, "w") as file:
