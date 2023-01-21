@@ -6,7 +6,7 @@ files_json = os.environ["INPUT_JSON"]
 find = os.environ["INPUT_FIND"]
 output_file = os.environ["GITHUB_OUTPUT"]
 
-z = f"{files_path}/*.*}"
+z = f"{files_path}/*.*"
 y = glob.glob(z)
 
 modified_count = len(y)
