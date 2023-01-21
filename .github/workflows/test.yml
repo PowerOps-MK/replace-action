@@ -14,4 +14,4 @@ jobs:
           path: ./Test
 
       - name: Get the output
-        run: echo "The ${{ steps.test.outputs.time }}"
+        run: echo "The ${{ steps.test.outputs.count }}"
