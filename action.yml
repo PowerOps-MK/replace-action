@@ -3,12 +3,10 @@ description: "GitHub Action to replace string in files"
 inputs:
   path:
     description: "Path of the files"
-  filter:
-    description: "Filter for the files"
+  json:
+    description: "JSON file to match file with replace String"
   find:
     description: "String to search in files"
-  replace:
-    description: "String to replace in files"
 outputs:
   modified_count:
     description: "The number of files which have been modified"
