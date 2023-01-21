@@ -7,9 +7,8 @@ output_file = os.environ["GITHUB_OUTPUT"]
 
 z = f"{files_path}/{files_filter}"
 y = glob.glob(z)
-for file in glob.glob(z):
+for file in y:
     print(file)
-
 
 modified_count = len(y)
 with open(output_file, "a") as file:
