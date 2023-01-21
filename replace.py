@@ -7,7 +7,7 @@ output_file = os.environ["GITHUB_OUTPUT"]
 
 z = f"{files_path}/{files_filter}"
 y = glob.glob(z)
-for file in z:
+for file in glob.glob(z):
    print(file)
 
 
