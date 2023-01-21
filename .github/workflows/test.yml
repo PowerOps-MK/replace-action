@@ -10,7 +10,7 @@ jobs:
         id: test
         uses: powerops-mk/replace-action@main
         with:
-          filter: "*.txt"
+          filter: "*.yaml"
           path: ./Test
 
       - name: Get the output
