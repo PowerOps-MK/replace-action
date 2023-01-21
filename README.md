@@ -28,6 +28,8 @@ jobs:
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | `path` | The path of the files to replace |
 | `filter` | Filter the files in the path |
+| `find` | The path of the files to replace |
+| `replace` | Filter the files in the path |
 
 ### Outputs
 
