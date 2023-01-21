@@ -11,4 +11,4 @@ print(y)
 
 modified_count = len(y)
 with open(output_file, "a") as file:
-    file.write(f"time={modified_count}")
+    file.write(f"count={modified_count}")
