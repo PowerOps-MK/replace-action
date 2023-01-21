@@ -5,7 +5,7 @@ files_path = os.environ["INPUT_PATH"]
 files_filter = os.environ["INPUT_FILTER"]
 output_file = os.environ["GITHUB_OUTPUT"]
 
-z = files_path + "/" + files_filter
+z = f"{files_path}/{files_filter}"
 y = glob.glob(z)
 print(y)
 
