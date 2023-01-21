@@ -12,6 +12,8 @@ jobs:
         with:
           filter: "*.txt"
           path: ./Test
+          find: "XX_IP"
+          replace: "ZYX"
 
       - name: Get the output
         run: echo "The ${{ steps.test.outputs.count }}"
