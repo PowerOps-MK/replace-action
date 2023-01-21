@@ -16,15 +16,12 @@ for object in files_dict["replace"]:
 
     # Replace the target string
     filedata = filedata.replace(find, object["ip"])
-    print(filedata)
+
+    # Write the file out again
+    with open(k, "w") as file:
+        file.write(filedata)
 
 modified_count = len(files_dict["replace"])
 with open(output_file, "a") as file:
     output = f"count={modified_count}"
     file.write(output)
-
-"""
-    # Write the file out again
-    with open(k, "w") as file:
-        file.write(filedata)
-"""
