@@ -28,5 +28,5 @@ for k in y:
         file.write(filedata)
 
 aList = json.loads(files_json)
-for k in aList.replace:
+for k in aList["replace"]:
     print(k)
