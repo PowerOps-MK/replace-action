@@ -6,7 +6,7 @@ inputs:
   filter:
     description: "Filter for the files"
 outputs:
-  modifiedFiles:
+  modified_count:
     description: "The number of files which have been modified"
 runs:
   using: "docker"
