@@ -18,7 +18,7 @@ jobs:
       - name: Find and Replace
         uses: powerops-mk/replace-action@main
         with:
-          path: ./app
+          path: ./files
           filter: *.yml
           find: XYZ_NAME
 ```
