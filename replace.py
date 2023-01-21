@@ -8,7 +8,8 @@ output_file = os.environ["GITHUB_OUTPUT"]
 
 files_dict = json.loads(files_json)
 for object in files_dict["replace"]:
-    print(object["file"])
+    full_path = f"{files_path}/{object['file']}"
+    print(full_path)
 
 modified_count = len(files_dict["replace"])
 with open(output_file, "a") as file:
@@ -16,8 +17,6 @@ with open(output_file, "a") as file:
     file.write(output)
 
 """
-z = f"{files_path}/*.*"
-
 for k in y:
     # Read in the file
     with open(k, "r") as file:
