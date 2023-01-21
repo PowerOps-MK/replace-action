@@ -28,4 +28,5 @@ for k in y:
         file.write(filedata)
 
 aList = json.loads(files_json)
-print(aList)
+for k in aList:
+    print(k)
