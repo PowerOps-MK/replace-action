@@ -27,5 +27,5 @@ for k in y:
     with open(k, "w") as file:
         file.write(filedata)
 
-aList = json.loads(files_json)
-print(aList)
+#aList = json.loads(files_json)
+print(files_json)
