@@ -29,4 +29,4 @@ for k in y:
 
 aList = json.loads(files_json)
 for k in aList["replace"]:
-    print(k)
+    print(k.ip)
