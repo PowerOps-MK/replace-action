@@ -1,5 +1,5 @@
 ---
-# This is a basic workflow to build and publish Docker images
+# This is a basic workflow to test test the replace Action
 name: "Test Action workflow"
 
 # Controls when the workflow will run
