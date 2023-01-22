@@ -17,7 +17,3 @@ outputs:
 runs:
   using: "docker"
   image: "Dockerfile"
-  args:
-    - ${{ inputs.path }}
-    - ${{ inputs.json }}
-    - ${{ inputs.find }}
