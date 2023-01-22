@@ -1,14 +1,15 @@
 {
   "name": "replace.json",
+  "description": "A example JSON to be used as secret"
   "files":
   [
     {
       "file": "file2.yaml",
-      "replace": "192.168.1.1"
+      "replace": "10.10.1.1"
     },
     {
       "file": "file3.json",
-      "replace": "192.168.1.2"
+      "replace": "10.10.1.2"
     }
   ]
 }
