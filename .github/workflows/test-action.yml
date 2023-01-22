@@ -47,3 +47,8 @@ jobs:
         run: |
           echo "${{ steps.replace.outputs.count }} files modified"
           cat ./Test/file3.json
+          
+      - name: tesr
+        uses: actions/hello-world-docker-action@main
+        with:
+          who-to-greet: 'Mona the Octocat'
