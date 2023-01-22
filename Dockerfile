@@ -4,7 +4,7 @@ FROM python@sha256:1274a1fb3354baf78e80cc7485771175b506a4712e49e272765dceeb0528f
 # Copy directory files i.e all files
 COPY replace.py /replace.py
 
-RUN chmod +x /replace.py
+#RUN chmod +x /replace.py
 
 # Code file to execute when the docker container starts up
-ENTRYPOINT ["python", "/replace.py"]
+CMD ["python", "/replace.py"]
