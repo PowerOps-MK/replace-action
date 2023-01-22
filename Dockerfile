@@ -8,4 +8,4 @@ WORKDIR /app
 COPY . .
 
 # Code file to execute when the docker container starts up
-CMD ["python3", "replace.py"]
+ENTRYPOINT ["python3", "replace.py"]
