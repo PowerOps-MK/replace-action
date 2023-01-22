@@ -7,4 +7,7 @@ COPY replace.py /replace.py
 RUN chmod +x /replace.py
 
 # Code file to execute when the docker container starts up
-ENTRYPOINT ["/replace.py"]
+#ENTRYPOINT ["/replace.py"]
+
+CMD ["/replace.py"]
+ENTRYPOINT ["python"]
