@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Find and Replace
-        uses: powerops-mk/replace-action@main
+        uses: powerops-mk/replace-action@master
         with:
           path: ./files
           json: input.json
