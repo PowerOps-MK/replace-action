@@ -1,6 +1,6 @@
 {
   "name": "replace.json",
-  "description": "A example JSON to be used as secret"
+  "description": "A example JSON to be used as secret",
   "files":
   [
     {
